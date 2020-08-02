@@ -1,0 +1,39 @@
+.marker {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid #e2e2e2;
+    min-width: 200px;
+    //margin: 0 0 15px 0;
+
+    &__wrapper {
+        padding: 10px;
+    }
+
+    &__title {
+        margin: 0 0 10px;
+    }
+
+    &__indicators {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__total {
+        span {
+            font-weight: 100;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    &__average {
+        text-align: right;
+        flex: 1;
+
+        &-wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

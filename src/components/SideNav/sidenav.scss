@@ -1,0 +1,40 @@
+.sidenav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        background-color: #56304e;
+        padding: 10px;
+        width: 100%;
+    }
+
+    &__img {
+        width: 35px;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        background-color: #64355e;
+    }
+
+    &__user {
+        padding: 10px;
+    }
+
+    &__icon-wrapper {
+        justify-content: center;
+        color: #e4e1e17a !important;
+
+        svg {
+            font-size: 35px;
+        }
+        &--active {
+            color: #ffffff !important;
+        }
+    }
+}
