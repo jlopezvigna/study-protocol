@@ -42,10 +42,15 @@ const TeamPerformance = (props) => {
 };
 export default React.memo(TeamPerformance);
 
-const getColor = (x) => {
-    if (x < 30) return 'error';
-    if (30 < x && x < 60) return 'warning';
-    return 'default';
+const getColor = (number) => {
+    let color = 'default';
+    if (number < 30) {
+        color = 'error';
+    } else if (30 < number && number < 60) {
+        color = 'warning';
+    }
+
+    return color;
 };
 
 const options = [
