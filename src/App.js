@@ -4,7 +4,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import theme from "./theme";
 import Dashboard from "./containers/Dashboard";
 
-const AppMemo = () => {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <LayaoutBase>
@@ -14,4 +14,4 @@ const AppMemo = () => {
   );
 };
 
-export default AppMemo;
+export default App;
